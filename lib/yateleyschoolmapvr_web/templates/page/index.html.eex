@@ -1,36 +1,26 @@
-<div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
-</div>
+<a-assets>
+  <a-asset-item id="ground-floor" src="images/ground-floor.dae"></a-asset-item>
+  <a-asset-item id="first-floor" src="images/first-floor.dae"></a-asset-item>
+  <a-asset-item id="second-floor" src="images/second-floor.dae"></a-asset-item>
+</a-assets>
 
-<div class="row marketing">
-  <div class="col-lg-6">
-    <h4>Resources</h4>
-    <ul>
-      <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
-      </li>
-      <li>
-        <a href="https://hexdocs.pm/phoenix">Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-    </ul>
-  </div>
+<a-entity id="model" position="0 0 0">
+  <a-animation attribute="rotation" from="0 -30 0" to="0 330 0" dur="15000"
+               easing="linear" repeat="indefinite"></a-animation>
+  <a-collada-model position="-.35 0 .55" rotation="0 -20 0" scale="1.5 1.5 1.5"
+                   src="#ground-floor"></a-collada-model>
+</a-entity>
 
-  <div class="col-lg-6">
-    <h4>Help</h4>
-    <ul>
-      <li>
-        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
-      </li>
-      <li>
-        <a href="http://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
-      </li>
-    </ul>
-  </div>
-</div>
+<a-entity id="model" position="0 0.25 0">
+  <a-animation attribute="rotation" from="0 -30 0" to="0 330 0" dur="15000"
+               easing="linear" repeat="indefinite"></a-animation>
+  <a-collada-model position="-.35 0 .55" rotation="0 -20 0" scale="1.5 1.5 1.5"
+                   src="#first-floor"></a-collada-model>
+</a-entity>
+
+<a-entity id="model" position="0 0.5 0">
+  <a-animation attribute="rotation" from="0 -30 0" to="0 330 0" dur="15000"
+               easing="linear" repeat="indefinite"></a-animation>
+  <a-collada-model position="-.35 0 .55" rotation="0 -20 0" scale="1.5 1.5 1.5"
+                   src="#second-floor"></a-collada-model>
+</a-entity>

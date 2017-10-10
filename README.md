@@ -5,7 +5,7 @@ MR; mixed reality - Microsoft HoloLens
 
 AR; augmented reality - using the camera on your devices, iOS/Android
 
-VR; virtual reality - Vive, Rift, Daydream, GearVR
+VR; virtual reality - Vive, Rift, Daydream, GearVR, Google Cardboard
 
 Works just like a normal 3d WebGL App on any desktop browser.
 
